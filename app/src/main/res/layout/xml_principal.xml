@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tw_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tu App de viajes!"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/tw_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tw_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar. Si eres tu? No lo dudes; accede a nuestra app y descubrirás miles de destinos y facilidades para alquilar coches, ver el tiempo, y más..."
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/iw_moto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tw_titulo" />
+
+    <ImageView
+        android:id="@+id/iw_moto"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tw_info"
+        app:srcCompat="@drawable/nomads_moto" />
+
+    <Button
+        android:id="@+id/b_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginHorizontal="8dp"
+        android:backgroundTint="#c0b8b8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iw_moto"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="658dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
