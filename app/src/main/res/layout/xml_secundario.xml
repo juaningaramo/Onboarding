@@ -25,50 +25,54 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/verde"
         app:icon="@drawable/icon1"
         app:iconGravity="textTop"
         app:iconSize="22dp"
-        android:backgroundTint="@color/verde"
+        app:layout_constraintBottom_toTopOf="@id/cv_1"
         app:layout_constraintEnd_toStartOf="@id/b_2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/cv_1"
-        app:layout_constraintTop_toBottomOf="@id/tv_titulo2" />
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo2"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/b_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/verde"
         app:icon="@drawable/icon2"
         app:iconGravity="textTop"
         app:iconSize="22dp"
-        android:backgroundTint="@color/verde"
         app:layout_constraintEnd_toStartOf="@id/b_3"
         app:layout_constraintStart_toEndOf="@id/b_1"
-        app:layout_constraintTop_toTopOf="@id/b_1" />
+        app:layout_constraintTop_toTopOf="@id/b_1"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/b_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/verde"
         app:icon="@drawable/icon3"
         app:iconGravity="textTop"
         app:iconSize="22dp"
-        android:backgroundTint="@color/verde"
         app:layout_constraintEnd_toStartOf="@id/b_4"
         app:layout_constraintStart_toEndOf="@id/b_2"
-        app:layout_constraintTop_toTopOf="@id/b_1" />
+        app:layout_constraintTop_toTopOf="@id/b_1"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/b_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/verde"
         app:icon="@drawable/icon4"
         app:iconGravity="textTop"
         app:iconSize="22dp"
-        android:backgroundTint="@color/verde"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/b_3"
-        app:layout_constraintTop_toTopOf="@id/b_1" />
+        app:layout_constraintTop_toTopOf="@id/b_1"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_1"
@@ -140,7 +144,8 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Maldives - 3 weeks" />
+                android:text="Maldives - 3 weeks"
+                tools:ignore="DuplicateIds" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -149,7 +154,8 @@
                 android:text="Beach Vacation"
                 android:textColor="#000000"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
