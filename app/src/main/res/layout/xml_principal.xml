@@ -7,6 +7,17 @@
     android:background="@drawable/background1"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.8"
+        android:background="@drawable/rectangle_sol33aadd_blrad5_brrad5"/>
+
     <TextView
         android:id="@+id/tw_titulo"
         android:layout_width="wrap_content"
@@ -27,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:fontFamily="@font/brawler"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
         android:text="Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar. Si eres tu? No lo dudes; accede a nuestra app y descubrirás miles de destinos y facilidades para alquilar coches, ver el tiempo, y más..."
@@ -34,7 +46,8 @@
         app:layout_constraintBottom_toTopOf="@id/iw_moto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tw_titulo" />
+        app:layout_constraintTop_toBottomOf="@id/tw_titulo"
+        tools:ignore="TextSizeCheck" />
 
     <ImageView
         android:id="@+id/iw_moto"
